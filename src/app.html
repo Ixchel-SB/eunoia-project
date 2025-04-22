@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eunoia</title>
+
+  <!-- Favicon and PWA Icons -->
+  <link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png" />
+  <link rel="icon" type="image/x-icon" href="/icons/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+  <link rel="manifest" href="/icons/site.webmanifest" />
+  <meta name="theme-color" content="#0031f3" />
+
+  %sveltekit.head%
+
+  <!-- Firebase -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-analytics.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyAPaYVNOfwD3GBil5ps10Z-FmJqjdm7F4c",
+      authDomain: "eunoia-athentication.firebaseapp.com",
+      projectId: "eunoia-athentication",
+      storageBucket: "eunoia-athentication.appspot.com",
+      messagingSenderId: "1074428660678",
+      appId: "1:1074428660678:web:45fa416fe3b33a8c1180c7",
+      measurementId: "G-S1WGNFKR6R"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+</head>
+<body>
+  <div id="svelte">%sveltekit.body%</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Web App</title>
+  %sveltekit.head%
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-analytics.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyAPaYVNOfwD3GBil5ps10Z-FmJqjdm7F4c",
+      authDomain: "eunoia-athentication.firebaseapp.com",
+      projectId: "eunoia-athentication",
+      storageBucket: "eunoia-athentication.firebasestorage.app",
+      messagingSenderId: "1074428660678",
+      appId: "1:1074428660678:web:45fa416fe3b33a8c1180c7",
+      measurementId: "G-S1WGNFKR6R"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+</head>
+<body>
+  <div id="svelte">%sveltekit.body%</div>
+</body>
+</html>
+-->
